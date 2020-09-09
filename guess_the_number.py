@@ -17,22 +17,11 @@ def generate_secret(low, high):
 
 def get_guess():
     '''get user's guess'''
-<<<<<<< HEAD
-
-    guess = (input('Guess the secret number? '))
-    try:
-        if guess.isalpha:
-        return guess
-    except:
-        print ("error")
-
-=======
     try:
         return int(input('Guess the secret number? '))
     except Exception as e:
         print('An error has occured')
         print(e)
->>>>>>> a2152f560b2ca19a108581a4fb575073b4971a74
 
 def check_guess(guess, secret):
     '''compare guess and secret, return string describing result of comparison'''
