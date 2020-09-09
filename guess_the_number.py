@@ -17,7 +17,13 @@ def generate_secret(low, high):
 
 def get_guess():
     '''get user's guess'''
-    return int(input('Guess the secret number? '))
+
+    guess = (input('Guess the secret number? '))
+    try:
+        if guess.isalpha:
+        return guess
+    except:
+        print ("error")
 
 
 def check_guess(guess, secret):
