@@ -1,10 +1,10 @@
 import random
 
 correct = 'you guessed correctly!'
-too_low = 'too low!!'
+too_low = 'Too Low!!!'
 too_high = 'too high'
 
-
+git add .
 def configure_range():
     '''Set the high and low values for the random number'''
     return 1, 10
